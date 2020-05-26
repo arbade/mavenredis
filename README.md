@@ -69,7 +69,6 @@ PONG
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.149 sec
 Results :
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
-[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
 [INFO] 
 [INFO] --- redis-maven-plugin:1.0.1:shutdown (stop-redis) @ redis-maven-plugin-example ---
 [INFO] Shutting down Redis server...
