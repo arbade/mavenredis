@@ -27,7 +27,7 @@ Integration tests example
 
 Configure plugin as follow steps:
 ```xml
-        <plugin>
+                    <plugin>
                         <groupId>com.arbade.maven.plugins</groupId>
                         <artifactId>redis-maven-plugin</artifactId>
                         <version>1.0.1</version>
