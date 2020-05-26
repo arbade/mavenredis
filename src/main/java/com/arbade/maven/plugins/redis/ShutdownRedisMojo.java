@@ -11,7 +11,7 @@ import org.apache.maven.plugins.annotations.LifecyclePhase;
 import org.apache.maven.plugins.annotations.Mojo;
 import org.apache.maven.plugins.annotations.Parameter;
 
-@Mojo( name = "shutdown", defaultPhase = LifecyclePhase.NONE )
+@Mojo( name = "compileShutdown", defaultPhase = LifecyclePhase.NONE )
 public class ShutdownRedisMojo  extends AbstractMojo {
 
     @Parameter(property = "redis.server.skip", defaultValue = "false")

@@ -9,7 +9,7 @@ public class RunForkedRedisMojoTest extends AbstractRedisMojoTest {
     public static final String FORKED_POM_FILE = "src/test/resources/unit/pom.xml";
 
     public void testRunForked() throws Exception {
-        final RunRedisMojo runRedisMojo = lookupRedisMojo(FORKED_POM_FILE, "run");
+        final RunRedisMojo runRedisMojo = lookupRedisMojo(FORKED_POM_FILE, "compileRun");
         assertNotNull(runRedisMojo);
 
         runRedisMojo.forked = true;
@@ -28,7 +28,7 @@ public class RunForkedRedisMojoTest extends AbstractRedisMojoTest {
 
         }
 
-        final ShutdownRedisMojo shutdownRedisMojo = lookupRedisMojo(FORKED_POM_FILE, "shutdown");
+        final ShutdownRedisMojo shutdownRedisMojo = lookupRedisMojo(FORKED_POM_FILE, "compileShutdown");
         shutdownRedisMojo.execute();
 
         testConnectionDown(jedis);

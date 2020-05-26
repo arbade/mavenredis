@@ -10,7 +10,7 @@ public class RunRedisMojoTest extends AbstractRedisMojoTest {
     public static final String SIMPLE_POM_FILE = "src/test/resources/unit/pom.xml";
 
     public void testRun() throws Exception {
-        final RunRedisMojo runRedisMojo = lookupRedisMojo(SIMPLE_POM_FILE, "run");
+        final RunRedisMojo runRedisMojo = lookupRedisMojo(SIMPLE_POM_FILE, "compileRun");
         assertNotNull(runRedisMojo);
 
         Thread redisThread = new Thread(new Runnable() {
@@ -38,7 +38,7 @@ public class RunRedisMojoTest extends AbstractRedisMojoTest {
 
         }
 
-        final ShutdownRedisMojo shutdownRedisMojo = lookupRedisMojo(SIMPLE_POM_FILE, "shutdown");
+        final ShutdownRedisMojo shutdownRedisMojo = lookupRedisMojo(SIMPLE_POM_FILE, "compileShutdown");
         shutdownRedisMojo.execute();
 
         testConnectionDown(jedis);

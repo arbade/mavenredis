@@ -3,7 +3,7 @@ package com.arbade.maven.plugins.redis;
 import org.apache.maven.plugins.annotations.LifecyclePhase;
 import org.apache.maven.plugins.annotations.Mojo;
 
-@Mojo(name = "start", defaultPhase = LifecyclePhase.NONE)
+@Mojo(name = "compileStart", defaultPhase = LifecyclePhase.NONE)
 public class StartRedisMojo extends RunRedisMojo {
 
     @Override

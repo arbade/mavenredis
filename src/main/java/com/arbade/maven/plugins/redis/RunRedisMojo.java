@@ -19,7 +19,7 @@ import redis.server.netty.RedisCommandHandler;
 import redis.server.netty.RedisReplyEncoder;
 import redis.server.netty.SimpleRedisServer;
 
-@Mojo(name = "run", defaultPhase = LifecyclePhase.NONE)
+@Mojo(name = "compileRun", defaultPhase = LifecyclePhase.NONE)
 public class RunRedisMojo extends AbstractMojo {
 
     public static final String REDIS_GROUP_CONTEXT_PROPERTY_NAME = RunRedisMojo.class.getName() + ":redisGroup";
