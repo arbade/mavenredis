@@ -18,7 +18,7 @@ add plugin to your pom:
 
 run ```mvn redis:run```
 
-Are you see this message you are ready to go: ```[INFO] Redis-Server Started...```
+When you see this message,you are ready to go: ```[INFO] Redis-Server Started...```
 
 
 Integration tests example
