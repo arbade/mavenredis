@@ -35,7 +35,7 @@ public class RuntimeRedisRunMojo extends AbstractMojo {
             Runtime runtime = Runtime.getRuntime();
             runtime.exec("redis-server");
         } catch (IOException e) {
-            getLog().info(e);
+            getLog().warn(e);
         }
     }
 }

@@ -36,9 +36,6 @@ public class ShutdownRedisMojo  extends AbstractMojo {
         ChannelFuture closeFuture = redisChannel.close();
         try {
             closeFuture.sync();
-
-            // The Netty version required by the embedded Redis implementation does not
-            // return a Future, so wait until terminated in a loop
             redisGroup.shutdownGracefully();
             while (!redisGroup.isTerminated()) {
                 Thread.sleep(50);
